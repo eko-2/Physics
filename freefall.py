@@ -14,7 +14,7 @@ def submit(text):
 xPoints = []
 yPoints = []
 
-# SUVAT
+
 u = 0
 for i in range(11):
     t = i 
@@ -34,24 +34,27 @@ axs[0].grid(True)
 axs[0].set_xlim(0, 10)
 axs[0].set_ylim(0, 40)
 
-# xPoints1 = []
-# yPoints1 = []
 
-# for i in range(11):
-#     t = i
-#     a = 9.81
-#     xPoints1.append(t)
-#     yPoints1.append(a)
 
-# axs[1].plot(xPoints, yPoints)
+xPoints1 = []
+yPoints1 = []
 
-# axs[1].set_title("Acceleration-Time Graph")
-# axs[1].set_xlabel("Time")
-# axs[1].set_ylabel("Acceleration")
-# axs[1].legend("upper right")
-# axs[1].grid(True)
-# axs[1].set_xlim(0, 10)
-# axs[1].set_ylim(0, 40)
+# need to figure out the distance travelled and time. 
+for i in range(11):
+    i = t
+    s = (0*t)+(0.5*(9.81*(t*t)))
+    xPoints1.append(t)
+    yPoints1.append(s)
+
+axs[1].plot(xPoints, yPoints)
+
+axs[1].set_title("Displacement-Time Graph")
+axs[1].set_xlabel("Time")
+axs[1].set_ylabel("Displacement")
+axs[1].legend("upper right")
+axs[1].grid(True)
+axs[1].set_xlim(0, 10)
+axs[1].set_ylim(0, 40)
 
 # Display the window
 plt.show()
