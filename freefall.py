@@ -58,6 +58,8 @@ while running:
     xPoints1 = []
     yPoints1 = []
 
+    timeSquared = timeTaken ** 2
+    totalS = (0*timeTaken) + ((9.81*timeSquared)/2)
     for t in np.arange(0, timeTaken+timeResolution, timeResolution): #isn't showing the create displacement
         s = (0*t)+((9.81*(t*t)/2))
         xPoints1.append(t)
@@ -70,7 +72,7 @@ while running:
     axs[1].legend("upper right")
     axs[1].grid(True)
     axs[1].set_xlim(0, timeTaken)
-    axs[1].set_ylim(0, s)
+    axs[1].set_ylim(0, totalS)
 
     plt.show(block=False)
     plt.pause(0.5)
