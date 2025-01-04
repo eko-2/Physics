@@ -44,7 +44,6 @@ while running:
         xPoints.append(t)
         yPoints.append(v)
 
-    # Velocity time graph
     axs[0].plot(xPoints, yPoints)
     axs[0].set_title("Velocity-Time Graph")
     axs[0].set_xlabel("Time")
@@ -59,7 +58,7 @@ while running:
     xPoints1 = []
     yPoints1 = []
 
-    for t in np.arange(0, timeTaken+timeResolution, timeResolution): #isn't showing the create displacement. 
+    for t in np.arange(0, timeTaken+timeResolution, timeResolution): #isn't showing the create displacement
         s = (0*t)+((9.81*(t*t)/2))
         xPoints1.append(t)
         yPoints1.append(s)
